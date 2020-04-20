@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528.project.BankAccountController">
+   <children>
+      <Text layoutX="28.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="49.49493408203125">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="224.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance:" wrappingWidth="63.89495849609375">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="386.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Status:" wrappingWidth="119.09490966796875">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="depositText" layoutX="3.0" layoutY="279.0" promptText="Enter deposit amount" />
+      <TextField fx:id="withdrawText" layoutX="205.0" layoutY="279.0" promptText="Enter withdraw amount" />
+      <TextField fx:id="onlinepurchaseText" layoutX="401.0" layoutY="279.0" promptText="Enter purchase amount" />
+      <Button fx:id="deposit" layoutX="48.0" layoutY="244.0" mnemonicParsing="false" onAction="#depositButton" text="Deposit" />
+      <Button fx:id="withdraw" layoutX="254.0" layoutY="244.0" mnemonicParsing="false" onAction="#withdrawButton" text="Withdraw" />
+      <Button fx:id="onlinePurchase" layoutX="431.0" layoutY="244.0" mnemonicParsing="false" onAction="#onlineButton" text="Online Purchase" />
+      <Label fx:id="name" layoutX="88.0" layoutY="32.0" prefHeight="19.0" prefWidth="111.0" />
+      <Label fx:id="balance" layoutX="288.0" layoutY="32.0" prefHeight="19.0" prefWidth="94.0" />
+      <Label fx:id="status" layoutX="506.0" layoutY="32.0" prefHeight="19.0" prefWidth="88.0" />
+      <Button fx:id="Logout" layoutX="273.0" layoutY="347.0" mnemonicParsing="false" onAction="#CustomerLogout" text="Logout" />
+      <Label fx:id="password" layoutX="8.0" layoutY="377.0" text="Label" textFill="#f0eaea">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Label>
+      <Label fx:id="errOnlinePurchase" layoutX="138.0" layoutY="137.0" prefHeight="62.0" prefWidth="366.0" textFill="#f80303">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
